@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samantha Paual — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Portfolio · Pampanga, Philippines</p>
+    <h1 class="hero-name">
+      Samantha<br>
+      <span class="hero-name-accent">Paual</span>
+    </h1>
+
+    <p class="hero-role">
+      <span class="arrow">→</span>
+      <span id="typed"></span><span class="cursor">_</span>
+    </p>
+
+    <p class="hero-desc">
+      An IT student passionate about building modern, purposeful applications —
+      exploring the intersection of AI automation, clean software design,
+      and human-centred interfaces.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="section section--white">
+  <div class="wrap">
+    <div class="about-grid">
+
+      <div class="about-img-col fade">
+        <div class="img-frame-wrap">
+          <div class="img-frame-border"></div>
+          <img src="images/sam2.jpg" alt="Samantha" class="about-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="about-fallback">SP</div>
+        </div>
+      </div>
+
+      <div class="about-text fade">
+        <p class="section-eyebrow">About Me</p>
+        <h2 class="section-title">Builder. Thinker.<br>Aspiring Engineer.</h2>
+        <div class="rule"></div>
+
+        <p>I'm a 2nd-year IT student with a deep interest in building modern applications
+           using PHP, Python, and Dart. I care about usability, performance, and clean UI —
+           designing in Figma before a single line of code gets written.</p>
+
+        <p>Currently learning AI Automation to integrate into the systems I build.
+           Alongside my studies, I freelance as an <strong>AI Language Assessor</strong>,
+           helping AI better understand context and respond more naturally.</p>
+
+        <p>Based in Pampanga, Philippines — open to collaborations, freelance work,
+           and new opportunities.</p>
+
+        <div class="about-links">
+          <a href="mailto:samanthapaual@gmail.com" class="chip">✉ Email</a>
+          <a href="https://github.com/samanthapaual-cpu" target="_blank" class="chip">GitHub</a>
+          <a href="https://www.linkedin.com/in/samantha-paual" target="_blank" class="chip">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TECH STACK ── -->
+<section id="stack" class="section">
+  <div class="wrap">
+    <p class="section-eyebrow fade">Tools of the Trade</p>
+    <h2 class="section-title fade">Tech Stack</h2>
+
+    <div class="stack-grid">
+
+      <div class="stack-card fade">
+        <p class="stack-cat">frontend</p>
+        <ul class="stack-items">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="stack-card fade">
+        <p class="stack-cat">backend</p>
+        <ul class="stack-items">
+          <li>Python</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+
+      <div class="stack-card fade">
+        <p class="stack-cat">mobile</p>
+        <ul class="stack-items">
+          <li>Dart</li>
+          <li>Flutter</li>
+          <li>Laravel</li>
+        </ul>
+      </div>
+
+      <div class="stack-card fade">
+        <p class="stack-cat">tooling</p>
+        <ul class="stack-items">
+          <li>Figma</li>
+          <li>Git</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects" class="section section--white">
+  <div class="wrap">
+    <p class="section-eyebrow fade">Selected Work</p>
+    <h2 class="section-title fade">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade">
+        <p class="project-num">01</p>
+        <h3 class="project-title">Wanderra</h3>
+        <p class="project-desc">Eco-friendly reward app with CO₂ tracking. Built with Flutter, Dart, and Laravel. Published on Google Play Store.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.cafecircuit.wanderra" target="_blank" class="project-link">Play Store →</a>
+      </div>
+
+      <div class="project-card fade">
+        <p class="project-num">02</p>
+        <h3 class="project-title">Sweet Treats by Khay</h3>
+        <p class="project-desc">Responsive cake shop website. Led as head programmer. Built with HTML, CSS, and JavaScript.</p>
+        <a href="https://skjj-lab.github.io/sweettreatsbykhay/" target="_blank" class="project-link">Live Demo →</a>
+      </div>
+
+      <div class="project-card fade">
+        <p class="project-num">03</p>
+        <h3 class="project-title">AGRITRACK</h3>
+        <p class="project-desc">Agricultural inventory management system built with Java and MySQL for tracking farm inputs and harvests.</p>
+        <a href="https://github.com/samanthapaual-cpu/agritrack" target="_blank" class="project-link">GitHub →</a>
+      </div>
+
+      <div class="project-card fade">
+        <p class="project-num">04</p>
+        <h3 class="project-title">PennySaver</h3>
+        <p class="project-desc">Mobile UI design for personal financial tracking, created in Figma with intuitive budgeting flows.</p>
+        <a href="https://www.figma.com/design/Ov9RlFJYJnwYdibTSHa2Lm/Final-Figma?node-id=0-1" target="_blank" class="project-link">Figma →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience" class="section">
+  <div class="wrap">
+    <p class="section-eyebrow fade">Where I've Been</p>
+    <h2 class="section-title fade">Experience</h2>
+
+    <div class="exp-list">
+
+      <div class="exp-item fade">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <h4 class="exp-role">IT Marketing — IRCITE 2026</h4>
+          <p class="exp-detail">Developer and concept maker of Wanderra, presented at the International Research Conference on IT Education.</p>
+        </div>
+      </div>
+
+      <div class="exp-item fade">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <h4 class="exp-role">Language Assessor — GNGN Eikawa Phils., Inc.</h4>
+          <p class="exp-detail">Clark, Pampanga · 2024–2025. Assessed English proficiency of Japanese students. Freelanced as AI Language Assessor.</p>
+        </div>
+      </div>
+
+      <div class="exp-item fade">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <h4 class="exp-role">Leader & Head Programmer — Sweet Treats by Khay</h4>
+          <p class="exp-detail">School-based project. Led team design and full development of a responsive e-commerce website.</p>
+        </div>
+      </div>
+
+      <div class="exp-item fade">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <h4 class="exp-role">Developer — Personal Portfolio Website</h4>
+          <p class="exp-detail">Developed my own personal portfolio using PHP, HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education" class="section section--white">
+  <div class="wrap">
+    <p class="section-eyebrow fade">Academic Background</p>
+    <h2 class="section-title fade">Education</h2>
+
+    <div class="exp-list">
+      <div class="exp-item fade">
+        <div class="exp-dot"></div>
+        <div class="exp-body">
+          <h4 class="exp-role">Bachelor of Science in Information Technology</h4>
+          <p class="exp-detail"><strong>Pampanga State Agricultural University</strong> · 2024 – Present</p>
+          <p class="exp-detail">Currently a 2nd-year IT student focused on software development, UI/UX design, and AI integration.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="section section--dark">
+  <div class="wrap">
+    <p class="section-eyebrow fade">Let's Connect</p>
+    <h2 class="section-title fade">Open to<br>Opportunities</h2>
+
+    <p class="contact-sub fade">
+      Whether it's a freelance project, collaboration, or just a conversation about tech — I'd love to hear from you.
+    </p>
+
+    <div class="contact-actions fade">
+      <a href="mailto:samanthapaual@gmail.com" class="btn-cream">Send an Email</a>
+      <a href="https://github.com/samanthapaual-cpu" target="_blank" class="btn-ghost">GitHub</a>
+      <a href="https://www.linkedin.com/in/samantha-paual" target="_blank" class="btn-ghost">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Samantha Paual. All rights reserved.</span>
+    <span>Pampanga, Philippines</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
