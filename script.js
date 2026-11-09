@@ -95,7 +95,7 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   const gallery = document.querySelector('.gallery-grid');
   const track = document.querySelector('.gallery-track');
   const nextButton = document.querySelector('.gallery-next');
-  if (!gallery || !track || !nextButton) return;
+  if (!gallery || !track) return;
 
   const panels = Array.from(track.querySelectorAll('.gallery-item'));
   let currentIndex = 0;
@@ -108,9 +108,11 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
 
-  nextButton.addEventListener('click', () => {
-    showPanel(currentIndex + 1 >= panels.length ? 0 : currentIndex + 1);
-  });
+  if (nextButton) {
+    nextButton.addEventListener('click', () => {
+      showPanel(currentIndex + 1 >= panels.length ? 0 : currentIndex + 1);
+    });
+  }
 
   gallery.addEventListener('mousemove', (event) => {
     isActive = true;
